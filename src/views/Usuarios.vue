@@ -1,7 +1,11 @@
 <template>
     <div>
         <h1>Información de Usuario</h1>
-        <usuario/>
+        <router-link :to="{name:'usuarios', params: {id: item}}" 
+            v-for="(item, index) of ArregloUsuarios" :key="index">
+            <button>{{item}}</button>
+        </router-link>
+        <Usuario/>
     </div>
 </template>
 
@@ -10,6 +14,11 @@ import Usuario from '@/components/Usuario.vue';
 export default {
     components: {
         Usuario
+    },
+    data(){
+        return{
+            ArregloUsuarios: ['grover', 'carlos', 'luisa','karla']
+        }
     }
 }
 </script>
