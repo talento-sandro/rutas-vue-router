@@ -2,7 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Contacto from '../views/Contacto'
-import  Usuarios from '../views/Usuarios.vue'
+import Usuarios from '../views/Usuarios.vue'
+import Login from '../views/Login.vue'
+import Signup from '../views/Signup.vue'
 
 Vue.use(VueRouter)
 
@@ -29,6 +31,16 @@ Vue.use(VueRouter)
     path: '/usuarios/:id',
     name: 'usuarios',
     component: Usuarios
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
+  },
+  {
+    path: '/signup',
+    name: 'signup',
+    component: Signup
   }
 ]
 
