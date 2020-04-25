@@ -1,16 +1,35 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/contacto">Contacto</router-link> |
-      <router-link to="/usuarios">Usuario</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="container">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <router-link to="/" class="nav-link active">Home</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/productos" class="nav-link active">Productos</router-link>
+        </li>
+
+        <li class="nav-item">
+          <router-link to="/contacto" class="nav-link active">Contacto</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/usuarios" class="nav-link active">Usuario</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/about" class="nav-link active">About</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/login" class="nav-link active">Login</router-link>
+         </li> 
+      </ul>
     </div>
     <router-view/>
   </div>
 </template>
 
 <style>
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+/*
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -31,4 +50,5 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+*/
 </style>

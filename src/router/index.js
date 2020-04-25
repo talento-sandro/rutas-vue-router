@@ -5,6 +5,7 @@ import Contacto from '../views/Contacto'
 import Usuarios from '../views/Usuarios.vue'
 import Login from '../views/Login.vue'
 import Signup from '../views/Signup.vue'
+import Productos from '../views/productos/Index.vue'
 
 Vue.use(VueRouter)
 
@@ -41,6 +42,15 @@ Vue.use(VueRouter)
     path: '/signup',
     name: 'signup',
     component: Signup
+  },
+  {
+    path: '/registrarse',
+    redirect: '/signup'
+  },
+  {
+    path: '/productos',
+    name: 'productos',
+    component: Productos
   }
 ]
 

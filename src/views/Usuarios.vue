@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <h1>Información de Usuario</h1>
         <router-link :to="{name:'usuarios', params: {id: item}}" 
             v-for="(item, index) of ArregloUsuarios" :key="index">
@@ -17,7 +17,7 @@ export default {
     },
     data(){
         return{
-            ArregloUsuarios: ['grover', 'carlos', 'luisa','karla']
+            ArregloUsuarios: ['Grover', 'Carlos', 'Luisa','karla']
         }
     }
 }
